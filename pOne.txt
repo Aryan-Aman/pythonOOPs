@@ -1,0 +1,8 @@
+Instance variables vs Class variables:(here only Instance)
+    -contains data which is unique to each instance
+
+init method/>initialize/>constructor
+    -when we create method/methods within a class they receive instance as first argument automatically
+    -by convention we should call instance self(can be whatever) but stick to convention after self we can specify what other args we want to accept
+
+-name,email,pay etc >attributes of aour class
