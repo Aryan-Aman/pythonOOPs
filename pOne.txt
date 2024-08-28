@@ -6,3 +6,8 @@ init method/>initialize/>constructor
     -by convention we should call instance self(can be whatever) but stick to convention after self we can specify what other args we want to accept
 
 -name,email,pay etc >attributes of aour class
+
+-if let forgot self argument then>eg in fullname no self>TypeError
+    fullname takes 0 posnl. args
+
+-can run methods using class name itself
