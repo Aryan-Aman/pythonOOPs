@@ -1,0 +1,2 @@
+class variables: that are shared among all instances of a class unlike instance varbls(these canbe unique - for each instance like names,email etc), 
+    class variables should be same for each instance 
