@@ -1,0 +1,17 @@
+Inheritance /creating subclasses :
+-inherit attr and methods from parent class
+-can overrite or add new functionality without effecting parent class
+
+** Method resolution order :
+when a subclass inherits from multiple parent classes, the method resolution order (MRO) determines which class's method is called when a method is invoked on an instance of the subclass
+order in which Python searches for a method in the inheritance graph. It's a depth-first, left-to-right traversal of the inheritance graph.
+print(help(Class_name)) - for MRO
+
+-let add a progm lang to dev class :> use super or Employee.(args)
+
+**never pass data types like list,dict as default args
+
+
+**built-in class :
+isinstance : if an obj is an instance of a class ?
+issubclass : class is subclass of another ?
