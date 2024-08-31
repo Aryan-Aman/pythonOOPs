@@ -13,6 +13,7 @@ class Employee:
     '''for return full name'''
     def full_name(self):
         print('{} {}'.format(self.first, self.last))
+
 '''
 both unique instances having different memory locations
 '''
@@ -21,9 +22,10 @@ emp_2=Employee('test2', 'user2', 34, 56000)
 
 # print(emp_1)
 # print(emp_2)
+
 '''
 not of use as we are adding these manually so whats use of class-
-so we'll use init method
+so we'll use init method above 
 '''
 # emp_1.first='test1'
 # emp_1.last='user'
@@ -41,7 +43,7 @@ so we'll use init method
 # print(emp_2.email)
 
 '''
-to type full name each time > create a methos withn class to put this functanility in one place-
+to type full name each time > create a method withn class to put this functionality in one place-
 same print func as below but change to self will work with all instances 
 '''
 # print('{} {}'.format(emp_1.first, emp_1.last))
