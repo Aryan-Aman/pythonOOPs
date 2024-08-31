@@ -1,0 +1,46 @@
+Class Methods:
+
+- For regular method self(instance) is automatically the first argument, So ? to change this to take class
+as first argument > class methods
+
+- regular method to class method : < add a decorator > @classmethod
+-convention for class variables :cls , as class is keyword so cant use it
+
+-Employee.set_raise_amt(1.08)-
+result:
+print(Employee.raise_amt) >1.08
+print(emp_1.raise_amt) >1.08
+print(emp_2.raise_amt) >1.08
+Reason : bcz ran set_raise_amt method (a class method) means now working with class not instance &
+setting cls variable raise_amt=amount (1.08 which we passed) 
+
+-can run classmethods from instances as well >no sense
+
+-classmethods as alternatives of constructors
+eg USECASE : 
+'''result - aman.arya@gits.com
+76000'''
+emp_1_str='aman-arya-76000'
+emp_2_str='test-kumar-8000'
+emp_3_str='tesst-singh-800'
+first, last, sal = emp_1_str.split('-')
+new_empl1=Employee(first, last, sal)
+print(new_empl1.email)
+print(new_empl1.sal)
+------------------------------------------
+ALTERNATIVE: 
+ @classmethod
+    def from_strng(cls, emp_str):
+        first, last, sal = emp_str.split('-')
+        return cls(first, last, sal)
+new_emp_2=Employee.from_strng(empt_str_2)
+print(new_emp_2.email)
+print(new_emp_2.sal)
+
+real world eg- datetime modele consider datetime.py file
+
+STATIC METHODS : 
+- Dont pass anything , behave like regular funcs , except we include them in class
+ bcz they have some logical conncn with the class
+ **in py dates have weekdays methods where sunday=6 monday=0
+ - a method is static if you dont access the instance or class anywhere in function like cls ,self are used in their func's
