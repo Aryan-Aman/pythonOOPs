@@ -1,0 +1,4 @@
+Magic Methods :
+-allow to emulate some built in behaviour within python and also how we implement /operate / overloading
+
+https://docs.python.org/3/reference/datamodel.html- special methods
