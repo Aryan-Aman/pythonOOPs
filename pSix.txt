@@ -1,0 +1,4 @@
+@property decorator :
+can access our method as attribute
+
+we r defining email as method in our class , but we can access it like an attribute
